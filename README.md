@@ -66,11 +66,13 @@ volume : 자동으로 httpd 볼륨이 생성됨 , template를 사용하지 않�
 
 
 
-#2 Custom Template으로 빠른 생성
+#2 template 없이 수동 컨테이너 생성
 
-Ubuntu SRV 생성  
+Debian 서버 생성하기  
 
-docker hub에서 생성하려고 하는 컨테이너 정보 확인 https://hub.docker.com/_/ubuntu  
+docker hub에서 생성하려고 하는 컨테이너 정보 확인 https://hub.docker.com/_/debian
+
+
 
 
 
@@ -79,5 +81,6 @@ docker hub에서 생성하려고 하는 컨테이너 정보 확인 https://hub.d
 
 #출처  
 https://documentation.portainer.io/v2.0/deploy/ceinstalldocker/
+https://hub.docker.com/
 
 
