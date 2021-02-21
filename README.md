@@ -77,18 +77,36 @@ docker hub에서 생성하려고 하는 컨테이너 정보 확인 https://hub.d
 ![image](https://user-images.githubusercontent.com/74689088/108616822-755c7300-7454-11eb-9abc-dbeadfc9d04f.png)  
 
 container 리스트에서 Add Container로 새 컨테이너 생성  
+Container에서 사용할 이름, image 이름 서비스될 포트나 접근 포트 입력  
 
 ![image](https://user-images.githubusercontent.com/74689088/108616794-2dd5e700-7454-11eb-98c5-a78dd5bdec78.png)  
 
-
-Container에서 사용할 이름, image 이름 서비스될 포트나 접근 포트 입력
-
+내부 서버에 접근하기 위해서 interactive & TTY 활성화  
 ![image](https://user-images.githubusercontent.com/74689088/108616808-50680000-7454-11eb-826d-452e8c3ade31.png)  
 
-내부 서버에 접근하기 위해서 interactive & TTY 활성화
+container : 서버의 데이터 저장 경로 지정  
+volume : container에서 사용할 볼륨 지정 처음에 생성한 볼륨으로 매핑  
 
 ![image](https://user-images.githubusercontent.com/74689088/108616844-b05ea680-7454-11eb-8296-0ba5e9bf2f92.png)  
 
+사용할 네트워크 지정 , 현재 네트워크는 기본적으로 생성된 네트워크를 사용하므로 IP지정이 불가능  
+사용자 정의 네트워크로 지정 시 IP mac 등 지정 가능  
+hostname은 지정하지 않으면 자동 생성
+![image](https://user-images.githubusercontent.com/74689088/108616941-80fc6980-7455-11eb-8ad7-c4e2ff2d4f59.png)  
+
+재시작 시 컨테이너 자동 기동  
+Always로 설정 시 자동으로 재시작 시 컨테이너들도 기동됨  
+![image](https://user-images.githubusercontent.com/74689088/108617088-d127fb80-7456-11eb-907a-007a36598eb7.png)  
+
+기본설정 마무리 후 [ Deployment ]로 생성  
+
+
+생성 완료 후 컨테이너 리스트 확인  
+![image](https://user-images.githubusercontent.com/74689088/108617144-4267ae80-7457-11eb-86aa-a92612d21fe7.png)  
+
+Debian 컨테이너 클릭  
+Console , Attach로 서버에 접속하여 apt를 통한 패키지 설치나 구성하여 서버로 사용이 가능
+![image](https://user-images.githubusercontent.com/74689088/108617163-6aefa880-7457-11eb-8425-5abffb650b94.png)  
 
 
 
