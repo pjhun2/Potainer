@@ -70,17 +70,31 @@ volume : 자동으로 httpd 볼륨이 생성됨 , template를 사용하지 않�
 
 Debian 서버 생성하기  
 
-docker hub에서 생성하려고 하는 컨테이너 정보 확인 https://hub.docker.com/_/debian
+docker hub에서 생성하려고 하는 컨테이너 정보 확인 https://hub.docker.com/_/debian  
+
+서버에서 사용할 volume 생성  
+
+![image](https://user-images.githubusercontent.com/74689088/108616822-755c7300-7454-11eb-9abc-dbeadfc9d04f.png)  
+
+container 리스트에서 Add Container로 새 컨테이너 생성  
+
+![image](https://user-images.githubusercontent.com/74689088/108616794-2dd5e700-7454-11eb-98c5-a78dd5bdec78.png)  
 
 
+Container에서 사용할 이름, image 이름 서비스될 포트나 접근 포트 입력
 
+![image](https://user-images.githubusercontent.com/74689088/108616808-50680000-7454-11eb-826d-452e8c3ade31.png)  
+
+내부 서버에 접근하기 위해서 interactive & TTY 활성화
+
+![image](https://user-images.githubusercontent.com/74689088/108616844-b05ea680-7454-11eb-8296-0ba5e9bf2f92.png)  
 
 
 
 
 
 #출처  
-https://documentation.portainer.io/v2.0/deploy/ceinstalldocker/
+https://documentation.portainer.io/v2.0/deploy/ceinstalldocker/  
 https://hub.docker.com/
 
 
