@@ -66,6 +66,15 @@ volume : 자동으로 httpd 볼륨이 생성됨 , template를 사용하지 않�
 
 
 
+#2 Custom Template으로 빠른 생성
+
+Ubuntu SRV 생성  
+
+docker hub에서 생성하려고 하는 컨테이너 정보 확인 https://hub.docker.com/_/ubuntu  
+
+
+
+
 
 
 #출처  
